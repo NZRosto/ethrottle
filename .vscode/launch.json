@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "preLaunchTask": "${defaultBuildTask}",
+            "type": "probe-rs-debug",
+            "request": "launch",
+            "name": "probe-rs Launch",
+            "cwd": "${workspaceFolder}",
+            "chipDescriptionPath": "mkl25z4-pac/KLxx_Series.yaml",
+            "chip": "MKL25Z128xxx4",
+            "probe": "0D28:0204:02000b0248824e45001a700add89001f8761000097969900",
+            "flashingConfig": {
+                "flashingEnabled": true,
+            },
+            "coreConfigs": [
+                {
+                    "coreIndex": 0,
+                    "programBinary": "./target/thumbv6m-none-eabi/debug/${workspaceFolderBasename}",
+                    "rttEnabled": true,
+                    "rttChannelFormats": [
+                        {
+                            "channelNumber": 0,
+                            "dataFormat": "Defmt",
+                            "showTimestamps": true
+                        }
+                    ],
+                    "svdFile": "${workspaceFolder}/mkl25z4-pac/MKL25Z4.svd"
+                }
+            ],
+        }
+    ]
+}

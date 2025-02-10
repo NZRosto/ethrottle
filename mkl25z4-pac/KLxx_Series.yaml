@@ -1,0 +1,734 @@
+name: KLxx Series
+generated_from_pack: true
+pack_file_release: 1.15.1
+variants:
+- name: MKL04Z16xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffffe00
+      end: 0x20000600
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p16_48mhz
+- name: MKL04Z32xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffffc00
+      end: 0x20000c00
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p32_48mhz
+- name: MKL04Z8xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1fffff00
+      end: 0x20000300
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p8_48mhz
+- name: MKL05Z16xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffffe00
+      end: 0x20000600
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p16_48mhz
+- name: MKL05Z32xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffffc00
+      end: 0x20000c00
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p32_48mhz
+- name: MKL05Z8xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1fffff00
+      end: 0x20000300
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p8_48mhz
+- name: MKL14Z32xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffffc00
+      end: 0x20000c00
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p32_48mhz
+- name: MKL14Z64xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffff800
+      end: 0x20001800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p64_48mhz
+- name: MKL15Z128xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffff000
+      end: 0x20003000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p128_48mhz
+- name: MKL15Z32xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffffc00
+      end: 0x20000c00
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p32_48mhz
+- name: MKL15Z64xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffff800
+      end: 0x20001800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p64_48mhz
+- name: MKL16Z128xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffff000
+      end: 0x20003000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p128_48mhz
+- name: MKL16Z256xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1fffe000
+      end: 0x20006000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p256_48mhz
+- name: MKL16Z32xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffffc00
+      end: 0x20000c00
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p32_48mhz
+- name: MKL16Z64xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffff800
+      end: 0x20001800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p64_48mhz
+- name: MKL24Z32xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffffc00
+      end: 0x20000c00
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p32_48mhz
+- name: MKL24Z64xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffff800
+      end: 0x20001800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p64_48mhz
+- name: MKL25Z128xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffff000
+      end: 0x20003000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p128_48mhz
+- name: MKL25Z32xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffffc00
+      end: 0x20000c00
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p32_48mhz
+- name: MKL25Z64xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffff800
+      end: 0x20001800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p64_48mhz
+- name: MKL26Z32xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffffc00
+      end: 0x20000c00
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p32_48mhz
+- name: MKL26Z64xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffff800
+      end: 0x20001800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p64_48mhz
+- name: MKL43Z64xxx4
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x1ffff800
+      end: 0x20001800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - mk_p64_48mhz_kl43
+flash_algorithms:
+- name: mk_p16_48mhz
+  description: MKXX 48Mhz 16kB Prog Flash
+  default: true
+  instructions: NUkQtUlECGA0SAAhAWA1SDNKSEQCYAEiQWCSBIJgkgLCYAUikgZCYQEiEgOCYQJGIDIRcEkeQWIA8BD5ACgA0AEgEL0AIHBHJ0oItXpESQMAkgoMAUYjSAAjSEQA8J75ACgA0AEgCL0ItR9JeUQdSCA5SEQA8KH4ACgO0RpIeEQaSzI4e0QAkBZIBCIYSUhEAPBB+QAoANABIAi9ELUSS3tEAUYPSAEiVDuSAkhEAPCN+BC9OLUMRgtJeURuOQCRAUYISBNGIkZIRADwJPkAKADQASA4vQAABAAAAACBBEAAAAJACAAAAKUAAAAQBQAADAQAAHC1BEYAaAAlA3gbBvzVcCMDcAAgOuADAADwN/oMBwsPExcbHyMnKy8zNiZoE3jzcSrgJmhTeLNxJuAmaJN4c3Ei4CZo03gzcR7gJmgTefNyGuAmaFN5s3IW4CZok3lzchLgJmjTeTNyDuAmaBN683MK4CZoU3qzcwbgJmiTenNzAuAmaNN6M3NAHMCyiELC2SFogCAIcAPgYGpBHADQgEcgaAB4AAb31SBoAHiBBgHVBCUG4MEGAdUIJQLgwAcA0BAlKEZwvQi1C0ZEImlGCnBqRgAhmEcIvf+1gbAVRgGaASdSaAAmSBm/AopCBNgBm5to0xiDQg/SAZrSaIpCBNgBmxtp0xiDQgHSAiYp4IgaASHJBUQYAOCMGjlGIEYA8Af5ACkC0P8mATYa4DlGKEYA8P74ACkS0AEmEuAJIGlGCHAgDEhwIAqIcMxwBJtqRgMhAZiYRwYAA9HtG+QZAC3s0TBGBbDwvfC1AWgAJAp4Egb81XAiCnACaAMh0XEBaIAiinEDaAAhWXEFaPwjK3EDaNlzA2gacAJoE3gbBvzVVXoSehcHASI/D9IDVhA7AADwa/kQCQsOEAkJCQkQHw4JCQkJCRECYQXgAyJSA/rnBmEA4AFhKgcSDxMAAPBV+RAMDAwPEhUYGx0fDAwMDAwMDQEiUgPm58FhIEbwvQEhyQL55wEhiQL25wEhSQLz5/8hATHw54Ah7udAIeznICHq5/61FkYHRh1GACCKGYsHAtD/IAEw/r2zBwHQASD+vXtoi0ID2LxoHBmUQg3S+2iLQgPYPGkcGZRCAdICIP69ASLJGtIFjBgb4MwaGeAGIGlGCHAgDEhwIAqIcMxw6HgIcah4SHFoeIhxKHjIcQibakYHIThGmEcAKODRJB02Hy0dAC7j0f69/rUVRgRGQmioAEAYHkaKQgPYo2jTGItCCNjjaItCA9gnadsZi0IB2AIg/r2CQgXYo2jTGINCAdOPGgrg4miCQgPZI2nTGINC7tOIGgEhyQVHGAQhOEYA8Bf4ACkC0P8gATD+vQEgaUYIcDgMSHA4Cohwz3AoCghxTXGOcQibakYGISBGmEf+vQAiAwmLQizTAwqLQhHTACOcRk7gA0YLQzzUACJDCItCMdMDCYtCHNMDCotCAdOURj/gwwmLQgHTywHAGlJBgwmLQgHTiwHAGlJBQwmLQgHTSwHAGlJBAwmLQgHTCwHAGlJBwwiLQgHTywDAGlJBgwiLQgHTiwDAGlJBQwiLQgHTSwDAGlJBQRoA0gFGUkEQRnBHXeDKDwDQSUIDEADTQEJTQAAinEYDCYtCLdMDCotCEtP8IokBEroDCotCDNOJAZIRi0II04kBkhGLQgTTiQE60JIRAOCJCcMJi0IB08sBwBpSQYMJi0IB04sBwBpSQUMJi0IB00sBwBpSQQMJi0IB0wsBwBpSQcMIi0IB08sAwBpSQYMIi0IB04sAwBpSQdnSQwiLQgHTSwDAGlJBQRoA0gFGY0ZSQVsQEEYB00BCACsA1UlCcEdjRlsQANNAQgG1ACDARsBGAr0wtHRGZB4leGQcq0IA0h1GY11bAOMYMLwYR/7///8AAAAA//////7///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  load_address: 0x1ffffe20
+  pc_init: 0x1
+  pc_uninit: 0x45
+  pc_program_page: 0xb5
+  pc_erase_sector: 0x9d
+  pc_erase_all: 0x69
+  data_section_offset: 0x5a8
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x4000
+    page_size: 0x80
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x400
+      address: 0x0
+- name: mk_p32_48mhz
+  description: MKXX 48Mhz 32kB Prog Flash
+  default: true
+  instructions: NUkQtUlECGA0SAAhAWA1SDNKSEQCYAEiQWCSBIJgkgLCYAUikgZCYQEiEgOCYQJGIDIRcEkeQWIA8BD5ACgA0AEgEL0AIHBHJ0oItXpESQMAkgoMAUYjSAAjSEQA8J75ACgA0AEgCL0ItR9JeUQdSCA5SEQA8KH4ACgO0RpIeEQaSzI4e0QAkBZIBCIYSUhEAPBB+QAoANABIAi9ELUSS3tEAUYPSAEiVDuSAkhEAPCN+BC9OLUMRgtJeURuOQCRAUYISBNGIkZIRADwJPkAKADQASA4vQAABAAAAACBBEAAAAJACAAAAKUAAAAQBQAADAQAAHC1BEYAaAAlA3gbBvzVcCMDcAAgOuADAADwN/oMBwsPExcbHyMnKy8zNiZoE3jzcSrgJmhTeLNxJuAmaJN4c3Ei4CZo03gzcR7gJmgTefNyGuAmaFN5s3IW4CZok3lzchLgJmjTeTNyDuAmaBN683MK4CZoU3qzcwbgJmiTenNzAuAmaNN6M3NAHMCyiELC2SFogCAIcAPgYGpBHADQgEcgaAB4AAb31SBoAHiBBgHVBCUG4MEGAdUIJQLgwAcA0BAlKEZwvQi1C0ZEImlGCnBqRgAhmEcIvf+1gbAVRgGaASdSaAAmSBm/AopCBNgBm5to0xiDQg/SAZrSaIpCBNgBmxtp0xiDQgHSAiYp4IgaASHJBUQYAOCMGjlGIEYA8Af5ACkC0P8mATYa4DlGKEYA8P74ACkS0AEmEuAJIGlGCHAgDEhwIAqIcMxwBJtqRgMhAZiYRwYAA9HtG+QZAC3s0TBGBbDwvfC1AWgAJAp4Egb81XAiCnACaAMh0XEBaIAiinEDaAAhWXEFaPwjK3EDaNlzA2gacAJoE3gbBvzVVXoSehcHASI/D9IDVhA7AADwa/kQCQsOEAkJCQkQHw4JCQkJCRECYQXgAyJSA/rnBmEA4AFhKgcSDxMAAPBV+RAMDAwPEhUYGx0fDAwMDAwMDQEiUgPm58FhIEbwvQEhyQL55wEhiQL25wEhSQLz5/8hATHw54Ah7udAIeznICHq5/61FkYHRh1GACCKGYsHAtD/IAEw/r2zBwHQASD+vXtoi0ID2LxoHBmUQg3S+2iLQgPYPGkcGZRCAdICIP69ASLJGtIFjBgb4MwaGeAGIGlGCHAgDEhwIAqIcMxw6HgIcah4SHFoeIhxKHjIcQibakYHIThGmEcAKODRJB02Hy0dAC7j0f69/rUVRgRGQmioAEAYHkaKQgPYo2jTGItCCNjjaItCA9gnadsZi0IB2AIg/r2CQgXYo2jTGINCAdOPGgrg4miCQgPZI2nTGINC7tOIGgEhyQVHGAQhOEYA8Bf4ACkC0P8gATD+vQEgaUYIcDgMSHA4Cohwz3AoCghxTXGOcQibakYGISBGmEf+vQAiAwmLQizTAwqLQhHTACOcRk7gA0YLQzzUACJDCItCMdMDCYtCHNMDCotCAdOURj/gwwmLQgHTywHAGlJBgwmLQgHTiwHAGlJBQwmLQgHTSwHAGlJBAwmLQgHTCwHAGlJBwwiLQgHTywDAGlJBgwiLQgHTiwDAGlJBQwiLQgHTSwDAGlJBQRoA0gFGUkEQRnBHXeDKDwDQSUIDEADTQEJTQAAinEYDCYtCLdMDCotCEtP8IokBEroDCotCDNOJAZIRi0II04kBkhGLQgTTiQE60JIRAOCJCcMJi0IB08sBwBpSQYMJi0IB04sBwBpSQUMJi0IB00sBwBpSQQMJi0IB0wsBwBpSQcMIi0IB08sAwBpSQYMIi0IB04sAwBpSQdnSQwiLQgHTSwDAGlJBQRoA0gFGY0ZSQVsQEEYB00BCACsA1UlCcEdjRlsQANNAQgG1ACDARsBGAr0wtHRGZB4leGQcq0IA0h1GY11bAOMYMLwYR/7///8AAAAA//////7///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  load_address: 0x1ffffc20
+  pc_init: 0x1
+  pc_uninit: 0x45
+  pc_program_page: 0xb5
+  pc_erase_sector: 0x9d
+  pc_erase_all: 0x69
+  data_section_offset: 0x5a8
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x8000
+    page_size: 0x100
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x400
+      address: 0x0
+- name: mk_p8_48mhz
+  description: MKXX 48Mhz 8kB Prog Flash
+  default: true
+  instructions: LEkQtUlECGArSAAhAWAsSCpKSEQCYAEiQWCSBIJgkgLCYAUikgZCYQEiEgOCYQJGIDIRcEkeQWIA8Lb4ACgA0AEgEL0AIHBHCLUeSXlEHEhIRADwoPgAKA7RGkh4RBpLEDh7RACQFkgEIhhJSEQA8BT5ACgA0AEgCL0QtRFLe0QBRg9IASIyO5ICSEQA8On4EL04tQxGC0l5REw5AJEBRgdIE0YiRkhEAPD3+AAoANABIDi9BAAAAACBBEAAAAJACAAAAIEAAACiAgAADAQAAHC1BEYAaAAlA3gbBvzVcCMDcAAgOuADAADwAfkMBwsPExcbHyMnKy8zNiZoE3jzcSrgJmhTeLNxJuAmaJN4c3Ei4CZo03gzcR7gJmgTefNyGuAmaFN5s3IW4CZok3lzchLgJmjTeTNyDuAmaBN683MK4CZoU3qzcwbgJmiTenNzAuAmaNN6M3NAHMCyiELC2SFogCAIcAPgYGpBHADQgEcgaAB4AAb31SBoAHiBBgHVBCUG4MEGAdUIJQLgwAcA0BAlKEZwvQi1C0ZEImlGCnBqRgAhmEcIvfC1AWgAJAp4Egb81XAiCnACaAMh0XEBaIAiinEDaAAhWXEFaPwjK3EDaNlzA2gacAJoE3gbBvzVVXoSehcHASI/D9IDVhA7AADwffgQCQsOEAkJCQkQHw4JCQkJCRECYQXgAyJSA/rnBmEA4AFhKgcSDxMAAPBn+BAMDAwPEhUYGx0fDAwMDAwMDQEiUgPm58FhIEbwvQEhyQL55wEhiQL25wEhSQLz5/8hATHw54Ah7udAIeznICHq5/+1gbAfRhVGDEYWRgAgD+AJIGlGCHAgDEhwIAqIcMxwakYDIQGYuEcAKAPRrRukGQAt7dEFsPC9/7UcRhIdBCOaQ4OwFkYDmgAgUmgMn40aGOAGIGlGCHAoDEhwKAqIcM1w4HgIcaB4SHFgeIhxIHjIcWpGByEDmLhHACgE0S0dNh8kHQAu5NEHsPC9MLR0RmQeJXhkHKtCANIdRmNdWwDjGDC8GEf+////AAAAAP/////+////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  load_address: 0x1fffff20
+  pc_init: 0x1
+  pc_uninit: 0x45
+  pc_program_page: 0x93
+  pc_erase_sector: 0x7b
+  pc_erase_all: 0x49
+  data_section_offset: 0x318
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x2000
+    page_size: 0x20
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x400
+      address: 0x0
+- name: mk_p64_48mhz
+  description: MKXX 48Mhz 64kB Prog Flash
+  default: true
+  instructions: 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
+  load_address: 0x1ffff820
+  pc_init: 0x1
+  pc_uninit: 0x45
+  pc_program_page: 0xb5
+  pc_erase_sector: 0x9d
+  pc_erase_all: 0x69
+  data_section_offset: 0x5f8
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x10000
+    page_size: 0x100
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x400
+      address: 0x0
+- name: mk_p128_48mhz
+  description: MKXX 48Mhz 128kB Prog Flash
+  default: true
+  instructions: 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
+  load_address: 0x1ffff020
+  pc_init: 0x1
+  pc_uninit: 0x45
+  pc_program_page: 0xb5
+  pc_erase_sector: 0x9d
+  pc_erase_all: 0x69
+  data_section_offset: 0x5f8
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x20000
+    page_size: 0x100
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x400
+      address: 0x0
+- name: mk_p256_48mhz
+  description: MKXX 48Mhz 256kB Prog Flash
+  default: true
+  instructions: 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
+  load_address: 0x1fffe020
+  pc_init: 0x1
+  pc_uninit: 0x45
+  pc_program_page: 0xb5
+  pc_erase_sector: 0x9d
+  pc_erase_all: 0x69
+  data_section_offset: 0x5f0
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x40000
+    page_size: 0x100
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x400
+      address: 0x0
+- name: mk_p64_48mhz_kl43
+  description: MKL43 48Mhz 64kB Prog Flash
+  default: true
+  instructions: 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
+  load_address: 0x1ffff820
+  pc_init: 0x1
+  pc_uninit: 0x5f
+  pc_program_page: 0xcf
+  pc_erase_sector: 0xb7
+  pc_erase_all: 0x83
+  data_section_offset: 0x618
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x10000
+    page_size: 0x100
+    erased_byte_value: 0xff
+    program_page_timeout: 1000
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x400
+      address: 0x0

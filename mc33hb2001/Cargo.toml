@@ -1,0 +1,15 @@
+[package]
+name = "mc33hb2001"
+version = "0.1.0"
+edition = "2021"
+
+
+[lints]
+workspace = true
+
+
+[dependencies]
+bitfield-struct = { workspace = true }
+defmt = { workspace = true }
+embedded-hal = { workspace = true }
+embedded-hal-async = { workspace = true }

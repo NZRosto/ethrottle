@@ -1,0 +1,9 @@
+imports_granularity = "Module"
+group_imports = "StdExternalCrate"
+comment_width = 80
+format_code_in_doc_comments = true
+wrap_comments = true
+use_field_init_shorthand = true
+reorder_impl_items = true
+format_strings = true
+single_line_let_else_max_width = 100

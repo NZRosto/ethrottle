@@ -1,0 +1,27 @@
+[env]
+DEFMT_LOG = "trace"
+
+[build]
+target = "thumbv6m-none-eabi"
+
+[target.thumbv6m-none-eabi]
+rustflags = [
+    "-C",
+    "link-arg=--nmagic",
+    "-C",
+    "link-arg=-Tlinker.x",
+    "-C",
+    "link-arg=-Tdefmt.x",
+]
+runner = [
+    "probe-rs",
+    "run",
+    "--probe",
+    "0D28:0204:02000b0248824e45001a700add89001f8761000097969900",
+    "--chip",
+    "MKL25Z128xxx4",
+    "--chip-description-path",
+    "mkl25z4-pac/KLxx_Series.yaml",
+    "--log-format",
+    "{t} {L} {s}",
+]
